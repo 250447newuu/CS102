@@ -24,5 +24,5 @@ This repository contains my solutions for Week 3 of CS102 at New Uzbekistan Univ
 - To compile any file, run:  
   ```bash
   g++ problemX.cpp -o problemX
-  ./problem +998930570722
+  ./problemx
   
