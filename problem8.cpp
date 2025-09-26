@@ -1,10 +1,13 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 int main() {
-    double d;
-    cin >> d;
-    double A=M_PI*pow(d,2);
-    cout<<"Area: "<<A<<endl;
+    char c;
+    cin >> c;
+    if (c >= 'a' && c <= 'z')
+        cout << "Lowercase alphabet" << endl;
+    if (c >= 'A' && c <= 'Z')
+        cout << "Uppercase alphabet" << endl;
+    if (!( (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ))
+        cout << "It is not an alphabet" << endl;
     return 0;
 }

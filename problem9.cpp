@@ -1,9 +1,13 @@
 #include <iostream>
 using namespace std;
 int main() {
-    float v0, v1, t;
-    cin >> v0 >> v1 >> t;
-    float a = (v1 - v0) / t;
-    cout << a << endl;
+    int speed;
+    cin >> speed;
+    if (speed < 20)
+        cout << "too slow" << endl;
+    if (speed > 80)
+        cout << "too fast" << endl;
+    if (speed >= 20 && speed <= 80)
+        cout << "just right" << endl;
     return 0;
 }

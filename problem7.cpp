@@ -1,12 +1,12 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 int main() {
-    int x;
-    cin >> x;
-    int y;
-    cin>>y;
-    double t=(3*(pow(x,2)+3))/(y/4.0+3)/2;
-    cout<<"t="<<t<<endl;
+    int a, b, c;
+    cin >> a >> b >> c;
+    if (a > 0 && b > 0 && c > 0)
+        if (a + b + c == 180)
+            cout << "The triangle is valid" << endl;
+        else
+            cout << "The triangle is not valid" << endl;
     return 0;
 }

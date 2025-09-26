@@ -1,13 +1,17 @@
 #include <iostream>
 using namespace std;
 int main() {
-    string name = "Xojimurodov Asrorbek";
-    string student_id = "250447";
-    string fav_song = "XXXTentacion - Revenge";
-    string movie = "Avengers";
-    cout << "My name is " << name << endl;
-    cout << "My student ID is " << student_id << endl;
-    cout << "My favorite song is " << fav_song << endl;
-    cout << "My favorite movie is " << movie << endl;
+    int x;
+    cin >> x;
+    if (x >= 0)
+        if (x % 2 == 0)
+            cout << "The number is positive and even"<<endl;
+        else
+            cout << "The number is positive and odd"<<endl;
+    if (x < 0)
+        if (x % 2 == 0)
+            cout << "The number is negative and even"<<endl;
+        else
+            cout << "The number is negative and odd";
     return 0;
 }
