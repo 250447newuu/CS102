@@ -1,11 +1,22 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main() {
-    int value1;
-    cin >> value1;
-    int value2;
-    cin>>value2;
-    int a=value1+value2;
-    cout<<"Sum: "<<value1<<" + "<<value2<<" = "<<a<<endl;
+    double a, b, c;
+    cin >> a >> b >> c;
+    double D = b * b - 4 * a * c;
+    if (D > 0) {
+        double x1 = (-b + sqrt(D)) / (2 * a);
+        double x2 = (-b - sqrt(D)) / (2 * a);
+        cout << "x1=" << x1 << endl;
+        cout << "x2=" << x2 << endl;
+    }
+    if (D == 0) {
+        double x = -b / (2 * a);
+        cout << "x1=x2=" << x << endl;
+    }
+    if (D < 0) {
+        cout << "No real roots" << endl;
+    }
     return 0;
 }
